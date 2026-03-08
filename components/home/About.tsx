@@ -1,6 +1,8 @@
 "use client";
 
+
 import { CodeBlock } from "@/components/ui/code-block";
+import Image from "next/image";
 
 const code = `{
  "name": "Cailee Averill",
@@ -26,10 +28,10 @@ const code = `{
 
 const About = () => {
     return (
-        <div className="flex gap-4 items-center justify-center">
+        <section className="flex flex-col items-center gap-6 md:flex-row">
             <div className="max-w-2xl">
                 <h1 className="text-3xl font-bold mb-1.5">About me</h1>
-                <p>
+                <p className="mb-6 text-neutral-600 dark:text-neutral-100">
                     I build modern web applications with React and TypeScript, focusing on performance, accessibility, and scalable UI architecture.
                     I&apos;m now expanding into full-stack and software engineering through backend development, data structures, and systems programming.
                 </p>
@@ -39,7 +41,8 @@ const About = () => {
                 filename="about.json"
                 code={code}
             />
-        </div>
+            <Image src="/mobile/json_mobile.png" alt="About" width={500} height={500} className="rounded-sm block md:hidden" />
+        </section>
     )
 }
 

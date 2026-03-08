@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { IconCheck, IconCopy } from "@tabler/icons-react";
 
 type CodeBlockProps = {
@@ -54,15 +54,15 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-full rounded-lg bg-slate-900 p-4 font-mono text-sm">
-      <div className="flex flex-col gap-2">
+    <div className="relative min-w-0 overflow-x-auto rounded-lg bg-mist-700 p-4 font-mono text-sm hidden md:block">
+      <div className="flex min-w-0 flex-col gap-2">
         {tabsExist && (
-          <div className="flex  overflow-x-auto">
+          <div className="flex overflow-x-auto">
             {tabs.map((tab, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`px-3 !py-2 text-xs transition-colors font-sans ${
+                className={`px-3 py-2 text-xs transition-colors font-sans ${
                   activeTab === index
                     ? "text-white"
                     : "text-zinc-400 hover:text-zinc-200"
@@ -87,7 +87,7 @@ export const CodeBlock = ({
       </div>
       <SyntaxHighlighter
         language={activeLanguage}
-        style={atomDark}
+        style={nightOwl}
         customStyle={{
           margin: 0,
           padding: 0,

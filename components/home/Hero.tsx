@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 
 export default function HomeHero() {
   return (
-    <div className="min-h-screen relative mx-auto flex max-w-7xl flex-col items-center justify-center">
+    <div className="min-h-[calc(100dvh-2.5rem)] relative mx-auto flex max-w-7xl flex-col items-center justify-center">
 
       <div className="px-4 py-10 md:py-20">
-        <h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold text-black md:text-4xl lg:text-7xl dark:text-white">
+        <h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold text-black md:text-4xl lg:text-7xl dark:text-neutral-100">
           {"Hello! My name is Cailee."
             .split(" ")
             .map((word, index) => (

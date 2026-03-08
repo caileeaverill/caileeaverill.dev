@@ -17,26 +17,26 @@ export default function ResizeNav() {
 
     {
       name: "Projects",
-      link: "#projects",
+      link: "/projects",
     },
     {
       name: "Experience",
-      link: "#experience",
+      link: "/experience",
     },
     {
       name: "About",
-      link: "#about",
+      link: "/about",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/contact",
     },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full shadow-2xl">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -66,7 +66,7 @@ export default function ResizeNav() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-white"
+                className="relative text-neutral-600 dark:text-neutral-100"
               >
                 <span className="block">{item.name}</span>
               </a>
