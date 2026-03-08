@@ -6,10 +6,10 @@ import { motion } from "motion/react";
 export default function HomeHero() {
   return (
     <div className="min-h-screen relative mx-auto flex max-w-7xl flex-col items-center justify-center">
-      
+
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold text-black md:text-4xl lg:text-7xl dark:text-white">
-          {"Hello. My name is Cailee."
+          {"Hello! My name is Cailee."
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -38,9 +38,10 @@ export default function HomeHero() {
             duration: 0.9,
             delay: 0.9,
           }}
-          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-300"
+          className="relative z-10 mx-auto max-w-2xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-300"
         >
-          Front-end software developer. 6 years in. I build things for the web and try not to break them. Welcome to my portfolio.
+          I&apos;m a front-end developer with 6+ years of experience building for the web.
+          Now expanding into full-stack and software engineering across the stack.
         </motion.p>
       </div>
     </div>
