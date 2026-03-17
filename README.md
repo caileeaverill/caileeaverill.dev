@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# caileeaverill.dev
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
+[![shadcn/ui](https://img.shields.io/badge/shadcn-ui-black?style=flat-square)](https://ui.shadcn.com)
+[![Motion](https://img.shields.io/badge/Motion-Framer%20Motion-purple?style=flat-square)](https://motion.dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> Personal portfolio and developer site for **Cailee Averill** — front-end developer transitioning into broader software engineering roles. **Focused on internships and co-ops**; I keep a separate profile for **professional experience**. Built with Next.js, React, and modern tooling for a fast, accessible, and delightful experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+View the demo: https://caileeaverill.dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Feature | Description |
+|--------|-------------|
+| 🏠 **Landing** | Hero with animated intro, About section, and featured projects |
+| 🎬 **Animations** | Smooth motion and scroll-based effects (Motion / Framer Motion) |
+| 🌙 **Dark mode** | System-aware light/dark theme with next-themes |
+| 📱 **Responsive nav** | Resizable navbar that adapts to scroll and viewport |
+| 🃏 **Project cards** | Focus-style cards for featured work (production, academic, personal) |
+| 📄 **About & FAQ** | Dedicated about page with accordion FAQ |
+| 📬 **Contact** | Contact page for getting in touch |
+| 🎨 **UI components** | shadcn/Radix-based components (accordion, buttons, code blocks) |
+| 📝 **Code blocks** | Syntax-highlighted code snippets (react-syntax-highlighter) |
+| 🚫 **404** | Custom not-found and 404 pages |
+| ⚡ **Performance** | Next.js App Router, optimized fonts (Geist, Inter, Geist Mono) |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- Add your own screenshots here. Example: -->
+<!-- ![Home](public/screenshots/home.png) -->
+<!-- ![About](public/screenshots/about.png) -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Home | About | Projects |
+|------|--------|----------|
+| *Screenshot of hero and featured projects* | *Screenshot of about/FAQ* | *Screenshot of project cards* |
 
-## Deploy on Vercel
+[To be added]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗺 Roadmap
+
+- [ ] Add a backend-powered contact form (email or API-based submission)
+- [ ] Expand featured projects with detailed case studies and screenshots
+- [ ] Add analytics (privacy-friendly) to track usage and improve UX
