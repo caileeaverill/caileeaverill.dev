@@ -235,16 +235,12 @@ export const NavbarLogo = () => {
   return (
     <Link
       href="/"
-      className="group relative z-20 flex items-center px-2 py-1 text-sm font-normal text-black"
+      className="group relative z-20 flex items-center px-2 py-1 text-sm font-normal text-black transition duration-200 hover:-translate-y-0.5"
     >
       <div className="relative h-4 w-6">
         <Code
           size={16}
-          className="absolute text-black opacity-100 scale-100 rotate-0 transition-all duration-300 group-hover:opacity-0 group-hover:scale-90 group-hover:-rotate-6 dark:text-white"
-        />
-        <House
-          size={16}
-          className="absolute text-black opacity-0 scale-90 rotate-6 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 dark:text-white"
+          className="absolute text-black dark:text-white opacity-100 scale-100 rotate-0 transition-all duration-300"
         />
       </div>
       <div className="font-bold text-black dark:text-white">

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import ResizeNav from "@/components/globals/Nav";
+import { MainContentReveal } from "@/components/globals/ScrollReveal";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ModeToggle } from "@/components/globals/ModeToggle";
 
@@ -45,7 +46,7 @@ export default function RootLayout({
         >
           <ResizeNav />
           <div className="flex flex-1 flex-col lg:max-w-7xl mx-auto justify-center px-4 py-20 min-h-0">
-            {children}
+            <MainContentReveal>{children}</MainContentReveal>
             <ModeToggle />
           </div>
         </ThemeProvider>

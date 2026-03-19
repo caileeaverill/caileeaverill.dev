@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "lucide-react";
 
@@ -49,23 +50,21 @@ export const Card = React.memo(
         <img
           src={card.src}
           alt={card.title}
-          className="object-cover absolute inset-0"
+          className="h-full w-full object-cover absolute inset-0"
         />
         {card.label && (
-          <div className="absolute top-4 right-4 z-20 flex items-center justify-center bg-gray-700/70 dark:text-neutral-100 rounded-full px-4 py-2 text-sm font-md pointer-events-none">
+          <div className="absolute top-4 right-4 z-20 flex items-center justify-center bg-white text-neutral-900 dark:bg-neutral-900/90 dark:text-neutral-100 rounded-full px-4 py-2 text-sm font-md pointer-events-none">
             {card.label}
           </div>
         )}
-        {card.link ? (
-          <a
-            href={card.link}
-            target="_blank"
-            rel="noopener noreferrer"
+        {card.href ? (
+          <Link
+            href={card.href}
             className="absolute inset-0 z-10"
-            aria-label={card.title}
+            aria-label={`View project: ${card.title}`}
           >
             {overlay}
-          </a>
+          </Link>
         ) : (
           overlay
         )}
@@ -80,7 +79,8 @@ export type FocusCard = {
   title: string;
   src: string;
   label?: string;
-  link?: string;
+  /** Internal app route, e.g. `/projects/my-slug` */
+  href?: string;
   description?: string;
 };
 
@@ -91,7 +91,7 @@ export function FocusCards({ cards }: { cards: FocusCard[] }) {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
       {cards.map((card, index) => (
         <Card
-          key={card.title}
+          key={card.href ?? card.title}
           card={card}
           index={index}
           hovered={hovered}
